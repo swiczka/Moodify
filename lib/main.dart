@@ -37,7 +37,7 @@ class _HomePageState extends State<MyHomePage>{
   Widget build(BuildContext context) {
     return MaterialApp(
       home: DefaultTabController(
-        length: 3,
+        length: 2,
         child: Scaffold(
           appBar: AppBar(
             toolbarHeight: 50,
@@ -48,8 +48,7 @@ class _HomePageState extends State<MyHomePage>{
                 child: const TabBar(
                   tabs: [
                     Tab(icon: Icon(Icons.document_scanner_outlined), text: "Skanuj",),
-                    Tab(icon: Icon(Icons.home_outlined), text: "Główna"),
-                    Tab(icon: Icon(Icons.favorite_border_outlined), text: "Ulubione"),
+                    Tab(icon: Icon(Icons.history), text: "Historia"),
                   ],
                 ),
               ),
@@ -64,8 +63,7 @@ class _HomePageState extends State<MyHomePage>{
                     padding: EdgeInsets.all(20),
                     child: searchBar(),
                   ),
-                ),
-                Text("Something big will be here..."),
+                )
               ]
           ),
         ),
